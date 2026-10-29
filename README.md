@@ -4,8 +4,9 @@
 finds and saves the conversation, codes every post with AI, and writes a research summary with content
 recommendations. It can then keep watching the question for new posts.
 
-> **Try the demo:** _link coming soon_. The demo uses made-up posts, and live searches and AI are switched
-> off. The source code is private.
+> **[Try the demo → fieldnotes.streamlit.app](https://fieldnotes.streamlit.app)**. The demo uses made-up posts,
+> and live searches and AI are switched off. If it has been asleep, press the wake-up button and give it
+> about a minute. The source code is private.
 
 ![My studies](images/home.png)
 
@@ -59,7 +60,8 @@ much was reviewed by a person.
 
 Python and Streamlit. Coding and summaries use OpenAI, with strict structured outputs checked against
 the codebook. Sources come from the YouTube Data API, Bluesky and Brave Search. Data is stored in SQLite,
-with a compressed safe copy in Neon Postgres. Fieldnotes is hosted on Replit.
+with a compressed safe copy in Neon Postgres. Fieldnotes runs on Replit; the demo runs on Streamlit
+Community Cloud.
 
 ## About this repository
 
