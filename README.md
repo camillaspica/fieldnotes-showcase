@@ -91,6 +91,45 @@ agreement scores. Each keeps its own review steps and audit trail.
 
 ![Analysis workspace](images/workspace.png)
 
+## Settings and advanced tools
+
+Fieldnotes starts in a simple guided view: eight steps, one study at a time, nothing to configure. Everything
+more specialised sits behind a switch in **Settings**, off until you turn it on, so a first-time user never sees
+it and an experienced researcher can have all of it. Settings are saved in the research database, so they travel
+with backups and the safe copy. In the demo they're shown but locked.
+
+![Settings](images/settings.png)
+
+### What the main screens show
+
+| Switch | What it does | Why it's there |
+| --- | --- | --- |
+| **Advanced tools in the sidebar** | Adds the full research workbench: project overview, research planning, collection, analysis handoff, uploads, data quality, codebooks, coding, gold sets, evaluation, human review, trends, insights, reports and backups. | The guided steps cover a typical study. The workbench is for work they don't cover, such as checking AI coding against a hand-coded gold set, editing a codebook in detail or inspecting data quality. |
+| **Active dataset and codebook selector** | Shows which dataset and codebook the workbench pages are using, and lets you switch. | Guided studies choose these automatically. They only matter when you use the workbench directly. |
+| **Evidence-checked insights and the formal report** | On the Report step, builds an evidence packet and asks the AI for candidate insights. Each must pass strict reference checks against the coded data, and the approved ones become a formal report. | For when a summary isn't enough and every claim needs an audit trail. The everyday research summary doesn't need it. |
+
+### Advanced research tools
+
+Each tool adds its controls only where they're used.
+
+| Switch | What it does | Why it's there |
+| --- | --- | --- |
+| **Analysis workspace** | Opens a separate workspace from Overview and Report. It holds:<ul><li>passage coding (marking the exact words that show a code);</li><li>themes, with the evidence for and against them;</li><li>a framework matrix;</li><li>a hypotheses notebook;</li><li>research cases, for comparing themes across groups.</li></ul> | Detailed qualitative analysis that goes beyond coding whole posts. |
+| **Team coding and agreement** | Gives several people the same posts to code separately, then shows how often they agree. | Checks that a codebook means the same thing to different coders before its results are trusted. |
+| **Transcripts and media** | Adds subtitle files (.vtt, .srt) and local images, audio and video to the Sources step. | Some conversations happen in videos and podcasts, not posts. |
+| **Ask questions about your data** | On the Report step, searches the study's coded evidence. Optional AI answers quote the exact passages they rely on, and each AI request is confirmed first. | Quick follow-up questions without rerunning the analysis. |
+| **Publish reports for VELA** | On the Report step, checks a finished report and publishes it to a private reports repository, where a video-planning agent turns it into content ideas. The checks confirm:<ul><li>every figure comes from the data;</li><li>quotations are redacted;</li><li>nothing personal is left.</li></ul>Each report is published only after you read the quotations and approve it, unless you switch on automatic updates. | Lets research feed content planning directly, with the evidence attached. |
+
+### Coding, search and connections
+
+| Setting | What it does | Why it's there |
+| --- | --- | --- |
+| **Records coded at once** | How many posts the AI codes in parallel, from 1 to 8. | More is faster. Lower it if OpenAI reports rate limits for your account. |
+| **Posted in** | The default period for live searches: past week, month, 3 months, year, or any time. | Used when a study's design hasn't set a period yet. |
+| **How much to search** | Light, Standard or Deep. Standard is up to 10 videos with 20 comments each, 100 Bluesky posts and one page of web results. Deep is 25 videos, 50 comments, 200 posts and two pages. | Balances coverage against API quota and cost. |
+| **Connections** | Shows whether OpenAI, YouTube, Bluesky and Brave Search are set up, plus Brave's monthly usage against its cap. Keys are never shown. | So you know which sources a search can use before you run it. |
+| **Data safety** | Shows whether the compressed safe copy in Neon Postgres is on and up to date, and links to backups, copies and restore. | Research data is the one thing that can't be recreated, so its protection is always visible. |
+
 ## Works on a phone
 
 <img src="images/phone-report.png" alt="Research summary on a phone" width="320">
