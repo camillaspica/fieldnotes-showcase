@@ -72,7 +72,7 @@ an enterprise data licence, by working from official APIs, public feeds and expo
 - **Built for analysis, not just dashboards.** You get codebooks, human review, agreement statistics, themes with
   the evidence for and against them, and a framework matrix, alongside volume, platform and word charts.
 - **Your data stays yours.** It lives in your own database with a compressed safe copy and downloadable
-  backups. Reports shared with other tools remove personal details from quotations.
+  backups. Reports passed on to other agents remove personal details from quotations.
 
 What it doesn't claim: posts are a sample of public conversation, not a representative survey. Fieldnotes says
 so in every report.
@@ -221,7 +221,7 @@ Each tool adds its controls only where they're used.
 | **Team coding and agreement** | Gives several people the same posts to code separately, then shows how often they agree. | Checks that a codebook means the same thing to different coders before its results are trusted. |
 | **Transcripts and media** | Adds subtitle files (.vtt, .srt) and local images, audio and video to the Sources step. | Some conversations happen in videos and podcasts, not posts. |
 | **Ask questions about your data** | On the Report step, searches the study's coded evidence. Optional AI answers quote the exact passages they rely on, and each AI request is confirmed first. | Quick follow-up questions without rerunning the analysis. |
-| **Publish reports for VELA** | On the Report step, checks a finished report and publishes it to a private reports repository, where a video-planning agent turns it into content ideas. The checks confirm:<ul><li>every figure comes from the data;</li><li>quotations are redacted;</li><li>nothing personal is left.</li></ul>Each report is published only after you read the quotations and approve it, unless you switch on automatic updates. | Lets research feed content planning directly, with the evidence attached. |
+| **Publish reports to other agents** | On the Report step, checks a finished report and publishes it in a structured, machine-readable format, so it can then feed into other agents in your marketing stack workflow. The checks confirm:<ul><li>every figure comes from the data;</li><li>quotations are redacted;</li><li>nothing personal is left.</li></ul>Each report is published only after you read the quotations and approve it, unless you switch on automatic updates. | Research flows straight into the rest of the marketing workflow, with the evidence attached. |
 
 ### Coding, search and connections
 
@@ -242,8 +242,8 @@ Each tool adds its controls only where they're used.
 Python and Streamlit. Coding and summaries use OpenAI, with strict structured outputs checked against
 the codebook. Sources come from the YouTube Data API, Bluesky, Brave Search, public RSS and Atom feeds,
 Hacker News and Stack Exchange. Data is stored in SQLite, with a compressed safe copy in Neon Postgres.
-Finished reports can also be published, after you approve them, in a structured format that other tools
-can read. Fieldnotes runs on Replit; the demo runs on Streamlit Community Cloud.
+Finished reports can also be published, after you approve them, in a structured format that
+other agents in a marketing stack workflow can read. Fieldnotes runs on Replit; the demo runs on Streamlit Community Cloud.
 
 ## About this repository
 
