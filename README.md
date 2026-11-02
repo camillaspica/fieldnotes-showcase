@@ -78,18 +78,6 @@ No scraping.
 "No licence fee" isn't the same as "no terms": each source's own rules still apply, and hosting, storage and AI
 costs are separate.
 
-### What Fieldnotes doesn't do (yet)
-
-- **Broad coverage.** There's no native TikTok, X, Instagram or full-Reddit collection, and no audience discovery.
-  You can import content-performance figures you've exported yourself, but Fieldnotes doesn't connect to analytics
-  accounts, calculate engagement rates or measure the effect of a decision.
-- **First-party feedback.** Surveys and support tickets come in by CSV or Excel import, not through a direct
-  integration.
-- **Teams.** Fieldnotes has a single owner, with no shared accounts or permissions.
-- **Proven accuracy and speed.** Tests so far use synthetic data and simulated providers. The AI's coding accuracy
-  on real posts, live collection reliability, and whether it's faster than the alternatives haven't been measured.
-- **Representativeness.** Posts are a sample of public conversation, not a survey of a population. Every report says so.
-
 ## Start with a research design
 
 Fieldnotes turns a rough question into a study you can defend. It marks what it assumed so you can check it,
