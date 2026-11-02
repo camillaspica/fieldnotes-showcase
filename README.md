@@ -20,11 +20,11 @@ research summary with content recommendations. It can then keep watching the que
 | **Design** | Type a rough question. AI drafts a research design: a precise question, the decision it informs, whose conversations count, the period, places and languages, and the kind of study. You check it and approve it. |
 | **Refine** | AI suggests sharper research questions and search terms within the design; you approve them. |
 | **Sources** | Search YouTube, Bluesky and the web, collect from RSS and Atom feeds, Hacker News and Stack Exchange, or import exports from listening tools such as Brandwatch, Talkwalker, Meltwater and Sprout Social. |
-| **Overview** | A free first look: volume over time, platforms, most-used words, example posts, and whether the data fits your design. |
+| **Overview** | A free first look: volume over time, platforms, most-used words, example posts, and whether the data fits your design. It also shows what is being counted: saved observations, distinct source items, extra versions of edited items and repeat observations. |
 | **Codebook** | AI drafts a codebook (themes, sentiment, relevance) that follows the design; you check and approve it. |
 | **Code** | Every post is coded by AI against the approved codebook, with a cost estimate first and live progress. |
 | **Review** | Check the posts the AI was unsure about, plus a spot check, one at a time. |
-| **Report** | A research summary with findings, what it means for your decision, audience needs and content ideas, downloadable as Word, PDF or Markdown. |
+| **Report** | A research summary with findings, what it means for your decision, audience needs and content ideas, downloadable as Word, PDF or Markdown. Below it, reviewable decision briefs, repeat studies, performance figures and an evidence export, closed until you open them. |
 
 ## Where Fieldnotes fits
 
@@ -57,7 +57,14 @@ workflow, without a data licence.
   much a person checked.
 - **Costs and consent up front.** You see a cost estimate before coding, and nothing goes to an AI service until
   you allow it.
-- **It keeps watching.** Scheduled checks add only new posts, code them with the same codebook and show what changed.
+- **Honest counting.** A post isn't a person. Overview separates saved observations from distinct source items,
+  edited versions and repeat observations, and says what it can't tell (it never guesses identity from similar
+  wording or author names).
+- **Findings that become reviewed decisions.** A decision brief pins each finding to its supporting and contrary
+  posts, and records the uncertainty and the next thing to investigate. If the evidence later changes, the brief is
+  marked as needing review rather than quietly rewritten.
+- **It keeps watching and repeats the study.** Scheduled checks add only new posts, code them with the same codebook
+  and show what changed. Repeat studies compare periods only when the comparison is fair, and say when it isn't.
 - **Your data stays yours.** It lives in your own database, with a compressed safe copy and downloadable backups.
   Codebooks export as JSON.
 
@@ -73,8 +80,9 @@ costs are separate.
 
 ### What Fieldnotes doesn't do (yet)
 
-- **Broad coverage.** There's no native TikTok, X, Instagram or full-Reddit collection, and no audience discovery
-  or channel-performance analytics.
+- **Broad coverage.** There's no native TikTok, X, Instagram or full-Reddit collection, and no audience discovery.
+  You can import content-performance figures you've exported yourself, but Fieldnotes doesn't connect to analytics
+  accounts, calculate engagement rates or measure the effect of a decision.
 - **First-party feedback.** Surveys and support tickets come in by CSV or Excel import, not through a direct
   integration.
 - **Teams.** Fieldnotes has a single owner, with no shared accounts or permissions.
@@ -123,6 +131,47 @@ Comparative studies show each group side by side, including posts that belong to
 Longitudinal studies chart how often each theme comes up, month by month.
 
 ![Change over time](images/change-over-time.png)
+
+## From findings to decisions
+
+Under the summary, a **Decisions and follow-up** section turns findings into something you can act on and
+revisit. It stays closed until you open it, and opens by itself once the study has a brief.
+
+![Decisions and follow-up](images/decisions.png)
+
+**Decision briefs.** Choose all your posts or one comparison group, pick the coded themes to investigate, then
+write each interpretation and what it means for the decision. For every finding you select supporting and
+contrary posts, say what you checked for counter-evidence, state the uncertainty and note what to investigate
+next. Quotations must appear word for word in the retained post. A brief is drafted first and only marked
+**Reviewed** after you confirm it. The brief can be for a product decision or a piece of digital content, with
+fields for audience, angle, format, channel and a plan for testing the idea. Every edit adds a revision, and if
+the study's evidence changes afterwards, the brief says it needs review.
+
+**Repeat the study.** Run the same study again on a schedule from sources you've already approved, or add manual
+period checkpoints for imported feedback. Nothing is collected until you switch it on. Fieldnotes then compares
+periods only when the comparison is fair, so it withholds one when the scope, codebook or collection changed, the
+periods overlap, coding is incomplete or collection was limited or failed.
+
+**Performance figures.** Import content-performance numbers you've exported (a simple CSV template with each
+metric's definition, unit and period), and link them to a decision. Each import is saved as its own snapshot and
+never summed with another, and no analytics account is contacted.
+
+**Opportunities.** A board compares findings across reviewed briefs. You set the priority, 1 to 5, with a reason.
+Frequency never sets it for you.
+
+**Narrative leads.** A local, rules-based grouping of similar vocabulary suggests possible narratives for you to
+review. You can download the ones you confirm as candidate codes and import them into the codebook, where you
+still approve them. It groups words, not meaning, so it can join opposing views.
+
+**Export the evidence.** Download a brief or a full evidence package: the source posts with their provenance, the
+brief and its revisions, codebooks, decisions, outcomes and period snapshots, with a checksum manifest. You can
+also record a decision, its owner, a next-check date and what you later observed. These are your judgements, not
+measurements of causal impact.
+
+![Counting units on Overview](images/counting.png)
+
+These parts use no AI request of their own. They have been tested only on made-up data, and the opportunity
+board and narrative grouping haven't been validated on real studies.
 
 ## Keeps watching the question
 
