@@ -26,56 +26,80 @@ research summary with content recommendations. It can then keep watching the que
 | **Review** | Check the posts the AI was unsure about, plus a spot check, one at a time. |
 | **Report** | A research summary with findings, what it means for your decision, audience needs and content ideas, downloadable as Word, PDF or Markdown. |
 
-## What makes Fieldnotes different
+## Where Fieldnotes fits
 
-**Fieldnotes puts a qualitative research method into an app.** It turns a question into a study you can defend:
-a design, a codebook, coding of every post, human checks and agreement scores. Every figure is counted by
-software, not written by AI, and every quotation is word-for-word and traceable to its post. It does this without
-an enterprise data licence, by working from official APIs, public feeds and exports you're already entitled to.
+**Fieldnotes is for question-led research with an evidence trail you can review.** You start with a research
+question and a design, collect from sources you're entitled to use, code with a codebook you approve, check what
+the AI wasn't sure about, and finish with findings linked to the posts, the coding and the study version behind
+them. It's aimed at an analyst, researcher or content strategist running focused studies.
 
-### Compared with pasting posts into a general AI assistant
+It doesn't claim to be the best or the only tool of its kind. Free and paid alternatives each do parts of this
+well (see below). What Fieldnotes offers is the whole path in one inspectable workflow, without a data licence.
 
-- **Numbers you can trust.** The app counts every figure from the coded data. The AI only writes prose, and any
-  figure it states that the data doesn't support is flagged.
-- **Real quotations.** Every quote is checked word-for-word against its post, keeps its platform and date, and
-  links to the original wherever the source provides a link.
-- **The same rules for every post.** Coding follows an approved, versioned codebook, not a fresh prompt each time.
-  Each answer is checked against that codebook's structure before it's accepted. An invalid answer gets one repair
-  attempt, and if it still fails, the post is reported as failed, never quietly dropped.
-- **Repeatable.** Each coding run is pinned to the exact dataset and codebook version it used, so results can be
-  traced and rerun.
-- **People stay in charge.** Posts the AI was unsure about, plus a random spot check, go to a person. Every
-  decision is kept as an audit trail, and the AI's original answer is never overwritten.
-- **Measured reliability.** Fieldnotes can compare the AI against a hand-coded reference set (precision, recall
-  and F1), and compare human coders with each other (Cohen's kappa for two, Fleiss' kappa for three to ten).
-- **A research design first.** The question, population, period, places, languages and kind of study are agreed
-  before any data is collected. Searching, coding and the report all follow the design, and every later step
-  warns you if it changes.
-- **Honest about limits.** Reports state what the sample is and isn't, what each source can and can't filter,
-  and how much was checked by a person.
-- **Costs and consent up front.** You see a cost estimate before coding starts, and nothing is sent to an AI
-  service until you allow it.
-- **It keeps watching.** Scheduled checks add only new posts, code them with the same codebook and show what
-  changed.
+### What it's built to do well
 
-### Compared with tools that need a special data licence
+- **Design first, and it holds you to it.** A saved research design drives the search, the codebook, the coding
+  and the report. In testing, saving a preview after the design had changed was refused as stale, and changing the
+  design after coding was flagged on every later step.
+- **Numbers counted, quotations checked.** The app counts every figure from the coded data. The AI only writes
+  prose, and any figure it states that the data doesn't support is flagged. Every quotation is checked word-for-word
+  against its post.
+- **Source data stays faithful.** In tests with feeds, an unknown publication date stayed unknown instead of being
+  invented, literal text such as `<draft>` was kept intact, and both versions of a revised item were retained.
+- **One codebook, applied the same way to every post.** Coding follows an approved, versioned codebook. Each
+  answer is checked against its structure, repaired once if invalid, and reported as failed if it still isn't.
+  Each run is pinned to the exact dataset and codebook version it used.
+- **People in the loop, with an audit trail.** Uncertain posts and a random spot check go to a person. Decisions
+  are kept as new records, the AI's original is never overwritten, and reports use the reviewed version.
+- **Reliability tools included.** Compare the AI with a hand-coded reference set (precision, recall, F1), or compare
+  two to ten human coders (Cohen's or Fleiss' kappa).
+- **Honest reports.** They state what the sample is and isn't, what each source can and can't filter, and how
+  much a person checked.
+- **Costs and consent up front.** You see a cost estimate before coding, and nothing goes to an AI service until
+  you allow it.
+- **It keeps watching.** Scheduled checks add only new posts, code them with the same codebook and show what changed.
+- **Your data stays yours.** It lives in your own database, with a compressed safe copy and downloadable backups.
+  Codebooks export as JSON.
 
-- **No enterprise licence or data reseller.** Sources are:
-  - the official YouTube Data API;
-  - Bluesky's public API;
-  - Brave Search;
-  - public RSS and Atom feeds;
-  - Hacker News and Stack Exchange;
-  - your own exports from listening tools.
-- **No scraping, and no data you aren't entitled to.** Reddit is reached only through search-result snippets,
-  and public-feed collection is planned and approved before it runs.
-- **Built for analysis, not just dashboards.** You get codebooks, human review, agreement statistics, themes with
-  the evidence for and against them, and a framework matrix, alongside volume, platform and word charts.
-- **Your data stays yours.** It lives in your own database with a compressed safe copy and downloadable
-  backups. Reports passed on to other agents remove personal details from quotations.
+### Data without an enterprise data licence
 
-What it doesn't claim: posts are a sample of public conversation, not a representative survey. Fieldnotes says
-so in every report.
+Fieldnotes works from sources you're already entitled to use: the official YouTube Data API, Bluesky's API, Brave
+Search, public RSS and Atom feeds, Hacker News, Stack Exchange and your own exports from listening tools. Reddit is
+reached only through search-result snippets, and public-feed collection is planned and approved before it runs.
+No scraping.
+
+"No licence fee" isn't the same as "no terms": each source's own rules still apply, and hosting, storage and AI
+costs are separate.
+
+### What other tools already do well
+
+None of the individual pieces is unique, and some tools are stronger than Fieldnotes in places. Based on each
+project's own documentation, plus a hands-on comparison of three open-source tools on shared synthetic examples,
+checked 1-2 November 2026. Features change, so check before relying on it.
+
+| Alternative | What it's good for |
+| --- | --- |
+| **Taguette** (free, open source) | Manual coding of text with verbatim highlights. In testing it coded, exported and re-imported the same twelve excerpts, and exports a standard REFI-QDA codebook. Basic coding and portability are already free. |
+| **QualCoder** (free, open source) | Desktop coding of text, images, audio and video, with hierarchical codes and coder-comparison reports including kappa. |
+| **quallmer** (free, open-source R package) | AI-assisted coding with codebooks, reliability statistics, an audit trail and a companion app for reviewing AI annotations. The closest in spirit to Fieldnotes' coding half. Its listing calls it experimental. |
+| **cat-vader** (free, open-source package) | Classifying social posts with an AI model, with connectors for platforms such as Bluesky, Reddit and YouTube. |
+| **Communalytic** (free tiers, hosted) | Collecting and analysing public discourse for researchers, including text and network analysis, with tier-specific caps. |
+| **4CAT** (free, open source) | Modular social-data collection and analysis, including networks and topic models. |
+| **Harken, OpenMagpie** (free, open source) | Keyword and feed monitoring. Harken also gives model-free sentiment and themes locally. |
+| **Dovetail** (hosted) | Customer-research analysis, with a published free plan of one project and one channel including AI summaries. |
+| **MAXQDA, ATLAS.ti, NVivo** (paid) | Mature qualitative-analysis suites. MAXQDA and ATLAS.ti both offer AI-assisted coding. |
+| **Brandwatch, Meltwater, Talkwalker, Pulsar, Quid** (paid) | Far broader licensed social coverage, audience discovery and channel analytics. Pulsar's research agent and Quid's briefs also produce evidence-linked findings. Brandwatch, Meltwater and Talkwalker don't publish their pricing. |
+
+### What Fieldnotes doesn't do (yet)
+
+- **Broad coverage.** There's no native TikTok, X, Instagram or full-Reddit collection, and no audience discovery
+  or channel-performance analytics. The paid platforms are stronger here.
+- **First-party feedback.** Surveys and support tickets come in by CSV or Excel import, not through a direct
+  integration.
+- **Teams.** Fieldnotes has a single owner, with no shared accounts or permissions.
+- **Proven accuracy and speed.** Tests so far use synthetic data and simulated providers. The AI's coding accuracy
+  on real posts, live collection reliability, and whether it's faster than the alternatives haven't been measured.
+- **Representativeness.** Posts are a sample of public conversation, not a survey of a population. Every report says so.
 
 ## Start with a research design
 
@@ -103,7 +127,7 @@ didn't happen.
 
 ![Overview](images/overview.png)
 
-## A research summary you can trust
+## A research summary built on checked evidence
 
 The app calculates every figure and picks every quotation from the coded data itself. The AI writes only
 the prose: the headline, findings, what this means for your decision, what the audience wants to know and
