@@ -33,8 +33,8 @@ question and a design, collect from sources you're entitled to use, code with a 
 the AI wasn't sure about, and finish with findings linked to the posts, the coding and the study version behind
 them. It's aimed at an analyst, researcher or content strategist running focused studies.
 
-It doesn't claim to be the best or the only tool of its kind. Free and paid alternatives each do parts of this
-well (see below). What Fieldnotes offers is the whole path in one inspectable workflow, without a data licence.
+It doesn't claim to be the best or the only tool of its kind. What it offers is the whole path in one inspectable
+workflow, without a data licence.
 
 ### What it's built to do well
 
@@ -71,29 +71,10 @@ No scraping.
 "No licence fee" isn't the same as "no terms": each source's own rules still apply, and hosting, storage and AI
 costs are separate.
 
-### What other tools already do well
-
-None of the individual pieces is unique, and some tools are stronger than Fieldnotes in places. Based on each
-project's own documentation, plus a hands-on comparison of three open-source tools on shared synthetic examples,
-checked 1-2 November 2026. Features change, so check before relying on it.
-
-| Alternative | What it's good for |
-| --- | --- |
-| **Taguette** (free, open source) | Manual coding of text with verbatim highlights. In testing it coded, exported and re-imported the same twelve excerpts, and exports a standard REFI-QDA codebook. Basic coding and portability are already free. |
-| **QualCoder** (free, open source) | Desktop coding of text, images, audio and video, with hierarchical codes and coder-comparison reports including kappa. |
-| **quallmer** (free, open-source R package) | AI-assisted coding with codebooks, reliability statistics, an audit trail and a companion app for reviewing AI annotations. The closest in spirit to Fieldnotes' coding half. Its listing calls it experimental. |
-| **cat-vader** (free, open-source package) | Classifying social posts with an AI model, with connectors for platforms such as Bluesky, Reddit and YouTube. |
-| **Communalytic** (free tiers, hosted) | Collecting and analysing public discourse for researchers, including text and network analysis, with tier-specific caps. |
-| **4CAT** (free, open source) | Modular social-data collection and analysis, including networks and topic models. |
-| **Harken, OpenMagpie** (free, open source) | Keyword and feed monitoring. Harken also gives model-free sentiment and themes locally. |
-| **Dovetail** (hosted) | Customer-research analysis, with a published free plan of one project and one channel including AI summaries. |
-| **MAXQDA, ATLAS.ti, NVivo** (paid) | Mature qualitative-analysis suites. MAXQDA and ATLAS.ti both offer AI-assisted coding. |
-| **Brandwatch, Meltwater, Talkwalker, Pulsar, Quid** (paid) | Far broader licensed social coverage, audience discovery and channel analytics. Pulsar's research agent and Quid's briefs also produce evidence-linked findings. Brandwatch, Meltwater and Talkwalker don't publish their pricing. |
-
 ### What Fieldnotes doesn't do (yet)
 
 - **Broad coverage.** There's no native TikTok, X, Instagram or full-Reddit collection, and no audience discovery
-  or channel-performance analytics. The paid platforms are stronger here.
+  or channel-performance analytics.
 - **First-party feedback.** Surveys and support tickets come in by CSV or Excel import, not through a direct
   integration.
 - **Teams.** Fieldnotes has a single owner, with no shared accounts or permissions.
