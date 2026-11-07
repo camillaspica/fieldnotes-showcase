@@ -11,7 +11,14 @@ research summary with content recommendations. It can then keep watching the que
 > and live searches and AI are switched off. If it has been asleep, press the wake-up button and give it
 > about a minute. The source code is private.
 
-![My studies](images/home.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/dark/home.png">
+  <img src="images/home.png" alt="My studies">
+</picture>
+
+Fieldnotes looks like a field survey: a faint survey grid, contour lines, a route for the study's eight steps with a
+flag on the current one, and quotations on ruled notebook paper. It comes in a light and a dark version and follows
+your device's setting, and so do the screenshots on this page.
 
 ## What it does
 
@@ -19,7 +26,7 @@ research summary with content recommendations. It can then keep watching the que
 | --- | --- |
 | **Design** | Type a rough question. AI drafts a research design: a precise question, the decision it informs, whose conversations count, the period, places and languages, and the kind of study. You check it and approve it. |
 | **Refine** | AI suggests sharper research questions and search terms within the design; you approve them. |
-| **Sources** | Search YouTube, Bluesky and the web, collect from RSS and Atom feeds, Hacker News and Stack Exchange, or import exports from listening tools such as Brandwatch, Talkwalker, Meltwater and Sprout Social. |
+| **Sources** | Search YouTube, Bluesky, X, the web, Reddit and Substack together, collect from RSS and Atom feeds, Hacker News, Stack Exchange and Instagram, or import exports from listening tools such as Brandwatch, Talkwalker, Meltwater and Sprout Social. |
 | **Overview** | A free first look: volume over time, platforms, most-used words, example posts, and whether the data fits your design. It also shows what is being counted: saved observations, distinct source items, extra versions of edited items and repeat observations. |
 | **Codebook** | AI drafts a codebook (themes, sentiment, relevance) that follows the design; you check and approve it. |
 | **Code** | Every post is coded by AI against the approved codebook, with a cost estimate first and live progress. |
@@ -87,22 +94,36 @@ study: **exploratory**, **descriptive**, **comparative** (two or more groups, si
 Searching, coding and the report all follow the approved design, and if the design changes after coding,
 every later step says so.
 
-![Research design](images/design.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/dark/design.png">
+  <img src="images/design.png" alt="Research design">
+</picture>
 
-<img src="images/phone-design.png" alt="Research design on a phone" width="320">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/dark/phone-design.png">
+  <img src="images/phone-design.png" alt="Research design on a phone" width="320">
+</picture>
 
 ## More places to listen
 
-Alongside YouTube, Bluesky and web search, Fieldnotes can collect from public RSS and Atom feeds, Hacker
-News and Stack Exchange. It suggests feeds that match your research question. Every collection is planned
-and approved first, and each source states exactly what it can and can't filter, so nothing is implied that
-didn't happen.
+One guided search covers several sources at once: YouTube, Bluesky, X (through xAI's X Search, which returns
+cited excerpts), the web, and Reddit and Substack (through Brave Search, as links and snippets). Fieldnotes can also
+collect from public RSS and Atom feeds, Hacker News and Stack Exchange, and from Instagram hashtags and
+professional accounts through Meta's official API once Meta has approved the app. It suggests feeds that match
+your research question. Every collection is planned and approved first, and each source states exactly what it
+can and can't filter, so nothing is implied that didn't happen.
 
-![Feed recommendations](images/sources.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/dark/sources.png">
+  <img src="images/sources.png" alt="Search sources together">
+</picture>
 
 ## See the data before you spend anything
 
-![Overview](images/overview.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/dark/overview.png">
+  <img src="images/overview.png" alt="Overview">
+</picture>
 
 ## A research summary built on checked evidence
 
@@ -110,22 +131,34 @@ The app calculates every figure and picks every quotation from the coded data it
 the prose: the headline, findings, what this means for your decision, what the audience wants to know and
 what content to make. Any figure the AI states that the data doesn't back up is flagged.
 
-![Research summary](images/report-summary.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/dark/report-summary.png">
+  <img src="images/report-summary.png" alt="Research summary">
+</picture>
 
 Comparative studies show each group side by side, including posts that belong to more than one group.
 
-![Content recommendations and groups compared](images/content-ideas.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/dark/content-ideas.png">
+  <img src="images/content-ideas.png" alt="Content recommendations and groups compared">
+</picture>
 
 Longitudinal studies chart how often each theme comes up, month by month.
 
-![Change over time](images/change-over-time.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/dark/change-over-time.png">
+  <img src="images/change-over-time.png" alt="Change over time">
+</picture>
 
 ## From findings to decisions
 
 Under the summary, a **Decisions and follow-up** section turns findings into something you can act on and
 revisit. It stays closed until you open it, and opens by itself once the study has a brief.
 
-![Decisions and follow-up](images/decisions.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/dark/decisions.png">
+  <img src="images/decisions.png" alt="Decisions and follow-up">
+</picture>
 
 **Decision briefs.** Choose all your posts or one comparison group, pick the coded themes to investigate, then
 write each interpretation and what it means for the decision. For every finding you select supporting and
@@ -156,7 +189,10 @@ brief and its revisions, codebooks, decisions, outcomes and period snapshots, wi
 also record a decision, its owner, a next-check date and what you later observed. These are your judgements, not
 measurements of causal impact.
 
-![Counting units on Overview](images/counting.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/dark/counting.png">
+  <img src="images/counting.png" alt="Counting units on Overview">
+</picture>
 
 These parts use no AI request of their own. They have been tested only on made-up data, and the opportunity
 board and narrative grouping haven't been validated on real studies.
@@ -167,14 +203,20 @@ Turn on watching and Fieldnotes checks your sources on a schedule. Each check sa
 new to the study, codes them with the approved codebook, and shows what changed. Nothing runs, and nothing
 is spent, until you allow it.
 
-![Keep watching this question](images/watching.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/dark/watching.png">
+  <img src="images/watching.png" alt="Keep watching this question">
+</picture>
 
 ## People stay in charge
 
 The AI's codes are checked where it was unsure, and every check is recorded. The report says exactly how
 much was reviewed by a person.
 
-![Review](images/review.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/dark/review.png">
+  <img src="images/review.png" alt="Review">
+</picture>
 
 ## Codebooks and coding
 
@@ -234,7 +276,10 @@ For deeper qualitative work, an optional analysis workspace adds passage coding,
 for and against them, a framework matrix, a hypotheses notebook, research cases and team coding with
 agreement scores. Each keeps its own review steps and audit trail.
 
-![Analysis workspace](images/workspace.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/dark/workspace.png">
+  <img src="images/workspace.png" alt="Analysis workspace">
+</picture>
 
 ## Settings and advanced tools
 
@@ -243,7 +288,10 @@ more specialised sits behind a switch in **Settings**, off until you turn it on,
 it and an experienced researcher can have all of it. Settings are saved in the research database, so they travel
 with backups and the safe copy. In the demo they're shown but locked.
 
-![Settings](images/settings.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/dark/settings.png">
+  <img src="images/settings.png" alt="Settings">
+</picture>
 
 ### What the main screens show
 
@@ -277,13 +325,16 @@ Each tool adds its controls only where they're used.
 
 ## Works on a phone
 
-<img src="images/phone-report.png" alt="Research summary on a phone" width="320">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/dark/phone-report.png">
+  <img src="images/phone-report.png" alt="Research summary on a phone" width="320">
+</picture>
 
 ## Built with
 
 Python and Streamlit. Coding and summaries use OpenAI, with strict structured outputs checked against
-the codebook. Sources come from the YouTube Data API, Bluesky, Brave Search, public RSS and Atom feeds,
-Hacker News and Stack Exchange. Data is stored in SQLite, with a compressed safe copy in Neon Postgres.
+the codebook. Sources come from the YouTube Data API, Bluesky, xAI's X Search, Brave Search (the web, Reddit and Substack),
+Meta's Instagram Graph API, public RSS and Atom feeds, Hacker News and Stack Exchange. Data is stored in SQLite, with a compressed safe copy in Neon Postgres.
 Finished reports can also be published, after you approve them, in a structured format that
 other agents in a marketing stack workflow can read. Fieldnotes runs on Replit; the demo runs on Streamlit Community Cloud.
 
