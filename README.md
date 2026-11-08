@@ -110,8 +110,11 @@ One guided search covers several sources at once: YouTube, Bluesky, X (through x
 cited excerpts), the web, and Reddit and Substack (through Brave Search, as links and snippets). Fieldnotes can also
 collect from public RSS and Atom feeds, Hacker News and Stack Exchange, and from Instagram hashtags and
 professional accounts through Meta's official API once Meta has approved the app. It suggests feeds that match
-your research question. Every collection is planned and approved first, and each source states exactly what it
-can and can't filter, so nothing is implied that didn't happen.
+your research question, picks the Stack Exchange site that fits your topic (Psychology & Neuroscience, Philosophy,
+Parenting and others), and can suggest Instagram hashtags with AI and check with Meta that each one is active
+before it is searched. The sources run at the same time, and a large X search is split into smaller requests, so a
+search takes about as long as its slowest source. Every collection is planned and approved first, and each source
+states exactly what it can and can't filter, so nothing is implied that didn't happen.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/dark/sources.png">
@@ -254,17 +257,20 @@ be imported and exported as JSON, so a framework can be reused across studies.
 ### How posts are coded and checked
 
 1. **Cost first.** You see an estimate and confirm before any post is sent to the AI.
-2. **Structured answers.** Each post is coded against the approved codebook, with a supporting quotation wherever
+2. **Runs on the server.** Coding carries on if you close the page or sign out, up to 16 posts at a time, and
+   pauses and resends if OpenAI asks it to slow down. Each coded post is saved as it goes, so a run that is
+   interrupted can be resumed, and "not yet coded" sends only the posts no earlier run has coded.
+3. **Structured answers.** Each post is coded against the approved codebook, with a supporting quotation wherever
    the codebook requires one, a confidence rating and the declared signals. Answers that break the codebook's structure are repaired once or
    reported as failed.
-3. **Review routing.** Low-confidence answers, unclear relevance, possible sarcasm and any review trigger send a
+4. **Review routing.** Low-confidence answers, unclear relevance, possible sarcasm and any review trigger send a
    post to a person, together with a random spot check.
-4. **Human review.** You accept, correct or add codes one post at a time. Each decision is a new record, the AI's
+5. **Human review.** You accept, correct or add codes one post at a time. Each decision is a new record, the AI's
    original is kept, and reports use the human-reviewed version wherever it exists.
-5. **Reliability, when you need it:**
+6. **Reliability, when you need it:**
    - compare the AI with a locked, hand-coded reference set (precision, recall, F1 and relevance accuracy);
    - give the same posts to two to ten coders and measure agreement (Cohen's or Fleiss' kappa).
-6. **Deeper analysis.** In the analysis workspace you can:
+7. **Deeper analysis.** In the analysis workspace you can:
    - code exact passages, with AI passage suggestions you can accept or reject;
    - see which themes tend to appear together;
    - build themes with the evidence for and against them;
