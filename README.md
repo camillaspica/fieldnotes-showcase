@@ -107,7 +107,8 @@ the summary weighs the evidence for and against each one.
   <img src="images/brief.png" alt="Start a study from a detailed research brief">
 </picture>
 
-New studies also start with sensible exclusions you can remove, such as news links shared without comment, adverts,
+New studies search in all languages unless you name particular ones, and they also start with sensible exclusions you
+can remove, such as news links shared without comment, adverts,
 reviews of films and games, academic papers, and jokes or spam. A default is skipped when it's what your study is
 about, and the coder gets each one as an explicit rule.
 
@@ -371,6 +372,7 @@ Each tool adds its controls only where they're used.
 | --- | --- | --- |
 | **Records coded at once** | How many posts the AI codes in parallel, from 1 to 16. | More is faster. Lower it if OpenAI reports rate limits for your account. |
 | **Posted in** | The default period for live searches: past week, month, 3 months, year, or any time. | Used when a study's design hasn't set a period yet. |
+| **Search in all languages** | New studies search posts in any language. A study is limited to particular languages only if you name them; the AI doesn't add one on its own. On by default. | Conversations about most topics happen in more than one language, and limiting a study to English should be your choice, not an assumption. |
 | **How much to search** | Light, Standard or Deep. Standard is up to 10 videos with 20 comments each, 100 Bluesky posts and one page of web results. Deep is 25 videos, 50 comments, 200 posts and two pages. | Balances coverage against API quota and cost. |
 | **Connections** | Shows whether OpenAI, YouTube, Bluesky and Brave Search are set up, plus Brave's monthly usage against its cap. Keys are never shown. | So you know which sources a search can use before you run it. |
 | **Default exclusions for new studies** | Adds the standard "posts that don't count" to each new study (news links without comment, adverts, reviews of fiction, academic papers, jokes and spam). On by default. | Most studies want first-hand views; you can still remove any default in a study. |
