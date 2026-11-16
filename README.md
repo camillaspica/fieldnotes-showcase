@@ -24,14 +24,14 @@ your device's setting, and so do the screenshots on this page.
 
 | Step | What happens |
 | --- | --- |
-| **Design** | Type a rough question. AI drafts a research design: a precise question, the decision it informs, whose conversations count, the period, places and languages, and the kind of study. You check it and approve it. |
+| **Design** | Type a rough question, or paste a detailed research brief. AI drafts a research design: a precise question, the decision it informs, whose conversations count, the period, places and languages, and the kind of study. You check it and approve it. |
 | **Refine** | AI suggests sharper research questions and search terms within the design; you approve them. |
-| **Sources** | Search YouTube, Bluesky, X, the web, Reddit and Substack together, collect from RSS and Atom feeds, Hacker News, Stack Exchange and Instagram, or import exports from listening tools such as Brandwatch, Talkwalker, Meltwater and Sprout Social. |
-| **Overview** | A free first look: volume over time, platforms, most-used words, example posts, and whether the data fits your design. It also shows what is being counted: saved observations, distinct source items, extra versions of edited items and repeat observations. |
+| **Sources** | Search YouTube, Bluesky, X, the web, Reddit and Substack together, plus TikTok, YouTube, Instagram, Quora and Medium pages through web search. Collect from RSS and Atom feeds, Hacker News, Stack Exchange and Instagram, add posts that Grok or Meta AI found for you, or import exports from listening tools such as Brandwatch, Talkwalker, Meltwater and Sprout Social. |
+| **Overview** | A free first look: volume over time, platforms, most-used words, example posts, and whether the data fits your design. It also shows what is being counted: saved observations, distinct source items, extra versions of edited items and repeat observations. You can download every saved record as a spreadsheet and read it yourself, before or instead of coding. |
 | **Codebook** | AI drafts a codebook (themes, sentiment, relevance) that follows the design; you check and approve it. |
 | **Code** | Every post is coded by AI against the approved codebook, with a cost estimate first and live progress. |
 | **Review** | Check the posts the AI was unsure about, plus a spot check, one at a time. |
-| **Report** | A research summary with findings, what it means for your decision, audience needs and content ideas, downloadable as Word, PDF or Markdown. Below it, reviewable decision briefs, repeat studies, performance figures and an evidence export, closed until you open them. |
+| **Report** | A research summary with findings, what it means for your decision, audience needs and content ideas, downloadable as Word, PDF, Markdown or PowerPoint. Below it, reviewable decision briefs, repeat studies, performance figures and an evidence export, closed until you open them. |
 
 ## Where Fieldnotes fits
 
@@ -73,14 +73,15 @@ workflow, without a data licence.
 - **It keeps watching and repeats the study.** Scheduled checks add only new posts, code them with the same codebook
   and show what changed. Repeat studies compare periods only when the comparison is fair, and say when it isn't.
 - **Your data stays yours.** It lives in your own database, with a compressed safe copy and downloadable backups.
-  Codebooks export as JSON.
+  Codebooks export as JSON, and the saved records download as a spreadsheet at any step.
 
 ### Data without an enterprise data licence
 
 Fieldnotes works from sources you're already entitled to use: the official YouTube Data API, Bluesky's API, Brave
-Search, public RSS and Atom feeds, Hacker News, Stack Exchange and your own exports from listening tools. Reddit is
-reached only through search-result snippets, and public-feed collection is planned and approved before it runs.
-No scraping.
+Search, public RSS and Atom feeds, Hacker News, Stack Exchange and your own exports from listening tools. Reddit,
+TikTok, Quora and Medium are reached only through search-result snippets, and public-feed collection is planned and
+approved before it runs. Posts from Grok or Meta AI are ones you asked those assistants for and pasted in yourself,
+and they stay labelled as such. No scraping.
 
 "No licence fee" isn't the same as "no terms": each source's own rules still apply, and hosting, storage and AI
 costs are separate.
@@ -93,6 +94,22 @@ study: **exploratory**, **descriptive**, **comparative** (two or more groups, si
 **longitudinal** (change over time). Research templates and advanced designs are there when you need them.
 Searching, coding and the report all follow the approved design, and if the design changes after coding,
 every later step says so.
+
+**Start from a detailed brief.** If you've already written up your research, paste the whole brief (up to 20,000
+characters) instead of a question. Fieldnotes keeps it word for word with the study. It drafts the design from it,
+including secondary questions, hypotheses, competing explanations, themes, theories, your methodological instructions
+and suggested search terms. Your own instructions and keywords are kept exactly as you wrote them, and the later
+steps follow them: Refine suggests search terms and counterexample searches, the codebook covers the hypotheses, and
+the summary weighs the evidence for and against each one.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/dark/brief.png">
+  <img src="images/brief.png" alt="Start a study from a detailed research brief">
+</picture>
+
+New studies also start with sensible exclusions you can remove, such as news links shared without comment, adverts,
+reviews of films and games, academic papers, and jokes or spam. A default is skipped when it's what your study is
+about, and the coder gets each one as an explicit rule.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/dark/design.png">
@@ -107,18 +124,33 @@ every later step says so.
 ## More places to listen
 
 One guided search covers several sources at once: YouTube, Bluesky, X (through xAI's X Search, which returns
-cited excerpts), the web, and Reddit and Substack (through Brave Search, as links and snippets). Fieldnotes can also
+cited excerpts), the web, and Reddit and Substack (through Brave Search, as links and snippets). Site searches add
+TikTok, YouTube, Instagram, Quora and Medium pages the same way, with `site:` and your terms; each keeps only pages
+from its own site. Fieldnotes can also
 collect from public RSS and Atom feeds, Hacker News and Stack Exchange, and from Instagram hashtags and
 professional accounts through Meta's official API once Meta has approved the app. It suggests feeds that match
 your research question, picks the Stack Exchange site that fits your topic (Psychology & Neuroscience, Philosophy,
 Parenting and others), and can suggest Instagram hashtags with AI and check with Meta that each one is active
 before it is searched. The sources run at the same time, and a large X search is split into smaller requests, so a
-search takes about as long as its slowest source. Every collection is planned and approved first, and each source
-states exactly what it can and can't filter, so nothing is implied that didn't happen.
+search takes about as long as its slowest source. Searches that include feeds, Hacker News or Stack Exchange save
+their results straight away, using all your saved terms, and Stack Exchange answers and comments are included unless
+you untick them. Every collection is planned and approved first, and each source states exactly what it can and can't
+filter, so nothing is implied that didn't happen.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/dark/sources.png">
   <img src="images/sources.png" alt="Search sources together">
+</picture>
+
+**Posts from Grok and Meta AI.** Grok can read X, and Meta AI can read Instagram, Facebook and Threads, better than a
+web search. Fieldnotes gives you a ready-made request asking for the raw posts, with exact wording and links. You paste
+the reply and press Save, then paste the next. Fieldnotes reads the reply without AI and labels each post from its
+link, such as "X (via Grok)" or "Instagram (via Meta AI)". Assistants can misquote or invent posts, so these stay
+marked as not checked, and by default only posts with a link to the platform are added.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/dark/ai-posts.png">
+  <img src="images/ai-posts.png" alt="Add posts from Grok or Meta AI">
 </picture>
 
 ## See the data before you spend anything
@@ -128,11 +160,25 @@ states exactly what it can and can't filter, so nothing is implied that didn't h
   <img src="images/overview.png" alt="Overview">
 </picture>
 
+**Read the raw data yourself.** Download every saved record as an Excel or CSV file, one row per record: date,
+source, type, title, full saved text, link, author or channel and search term. It's there before coding, so you can
+skip coding entirely if you'd rather read the posts. YouTube videos and comments are included. Anything a source's
+rules hold back, such as YouTube data past its 28-day refresh, is left out and counted.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/dark/records.png">
+  <img src="images/records.png" alt="Download the saved records">
+</picture>
+
 ## A research summary built on checked evidence
 
 The app calculates every figure and picks every quotation from the coded data itself. The AI writes only
 the prose: the headline, findings, what this means for your decision, what the audience wants to know and
 what content to make. Any figure the AI states that the data doesn't back up is flagged.
+
+Each report leads with a data story: the summary, a theme chart with the number it's out of, the dates and selection
+it covers, and examples you can trace back to the saved post. Download it as Word, PDF or Markdown, or as PowerPoint
+with editable charts and each quotation's full context in the speaker notes.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/dark/report-summary.png">
@@ -323,10 +369,11 @@ Each tool adds its controls only where they're used.
 
 | Setting | What it does | Why it's there |
 | --- | --- | --- |
-| **Records coded at once** | How many posts the AI codes in parallel, from 1 to 8. | More is faster. Lower it if OpenAI reports rate limits for your account. |
+| **Records coded at once** | How many posts the AI codes in parallel, from 1 to 16. | More is faster. Lower it if OpenAI reports rate limits for your account. |
 | **Posted in** | The default period for live searches: past week, month, 3 months, year, or any time. | Used when a study's design hasn't set a period yet. |
 | **How much to search** | Light, Standard or Deep. Standard is up to 10 videos with 20 comments each, 100 Bluesky posts and one page of web results. Deep is 25 videos, 50 comments, 200 posts and two pages. | Balances coverage against API quota and cost. |
 | **Connections** | Shows whether OpenAI, YouTube, Bluesky and Brave Search are set up, plus Brave's monthly usage against its cap. Keys are never shown. | So you know which sources a search can use before you run it. |
+| **Default exclusions for new studies** | Adds the standard "posts that don't count" to each new study (news links without comment, adverts, reviews of fiction, academic papers, jokes and spam). On by default. | Most studies want first-hand views; you can still remove any default in a study. |
 | **Data safety** | Shows whether the compressed safe copy in Neon Postgres is on and up to date, and links to backups, copies and restore. | Research data is the one thing that can't be recreated, so its protection is always visible. |
 
 ## Works on a phone
@@ -339,10 +386,11 @@ Each tool adds its controls only where they're used.
 ## Built with
 
 Python and Streamlit. Coding and summaries use OpenAI, with strict structured outputs checked against
-the codebook. Sources come from the YouTube Data API, Bluesky, xAI's X Search, Brave Search (the web, Reddit and Substack),
-Meta's Instagram Graph API, public RSS and Atom feeds, Hacker News and Stack Exchange. Data is stored in SQLite, with a compressed safe copy in Neon Postgres.
+the codebook. Sources come from the YouTube Data API, Bluesky, xAI's X Search, Brave Search (the web, Reddit, Substack,
+TikTok, YouTube, Instagram, Quora and Medium), Meta's Instagram Graph API, public RSS and Atom feeds, Hacker News and
+Stack Exchange, plus posts you paste in from Grok or Meta AI. Data is stored in SQLite, with a compressed safe copy in Neon Postgres.
 Finished reports can also be published, after you approve them, in a structured format that
-other agents in a marketing stack workflow can read. Fieldnotes runs on Replit; the demo runs on Streamlit Community Cloud.
+other agents in a marketing stack workflow can read. Fieldnotes runs on Render; the demo runs on Streamlit Community Cloud.
 
 ## About this repository
 
